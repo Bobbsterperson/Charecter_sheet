@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS grid</title>
+    <style>
+        .main-form {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #a4b394;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            vertical-align: top;
+        }
+
+
+        .name_sex_etc{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap:1em;
+            grid-auto-columns: minmax(100px, auto);
+        }   
+         .name_sex_etc > div{
+            background:#eee;
+            padding: 1em;
+        }
+        .name_sex_etc > div:nth-child(odd){
+            background: #ddd;
+        }
+
+        .nested{
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-auto-rows: 70px;
+            grid-gap: 1em;
+        }
+        .nested > div{
+            border: #333 1px solid;
+            padding: 1em;
+        }
+
+
+        .stats{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap:1em;
+        }
+        .stats > div{
+            background: #ccc5c5;
+            padding: 1em;
+        }
+        .stats > div:nth-child(odd){
+            background: #d8c8c8;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-form">
+    <div class="name_sex_etc">
+        <div class="nested_name">
+            <div>
+                <label for="Name">Name:</label>
+                <input type="text" id="Name" placeholder="................." maxlength="10" required>
+            </div>
+            <div>
+                <label for="Race">Race:</label>
+                <input type="text" id="Race" placeholder="................." maxlength="10" required>
+            </div>
+            <div>
+                <label for="Class">Class:</label>
+                <input type="text" id="Class" placeholder="................." maxlength="10" required>
+            </div>
+            
+            
+        </div>
+        <div>
+            <label for="Sex">Sex:</label>
+            <select id="Sex">
+                <option value=".................">.................</option>
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+              </select>
+            <div>
+            <label for="LVL">LVL:</label>
+            <input type="text" id="LVL" placeholder="................." maxlength="10" required><br>
+            </div>
+            <label for="Experience">Experience:</label>
+            <input type="text" id="Experience" placeholder="................." maxlength="10" required>
+        </div>
+        <div>
+            
+                <div>
+                    <label for="Initiative">Initiative:</label>
+                    <input type="text" id="Initiative" placeholder="................." maxlength="10" required>
+                </div>
+                <div>
+                    <label for="Speed">Speed:</label>
+                    <input type="number" id="Speed" placeholder="................." maxlength="10" required>
+                </div>
+        
+        </div></div>
+    <div class="stats">   
+        <div>
+            ass
+        </div>
+        <div>
+            stats
+        </div>
+    
+    </div>
+</body>
+</html>

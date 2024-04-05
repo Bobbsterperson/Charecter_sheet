@@ -17,7 +17,7 @@
 
         .name_sex_etc{
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
             grid-gap:1em;
             grid-auto-columns: minmax(100px, auto);
         }   
@@ -57,9 +57,14 @@
 </head>
 <body>
     <div class="main-form">
+    
     <div class="name_sex_etc">
+    
         
-        <div class="nested_name">
+        
+        
+            <div class="nested_name">
+            <div>
                 <label for="Name">Name:</label>
                 <input type="text" id="Name" placeholder="................." maxlength="10" required>
             </div>
@@ -71,23 +76,29 @@
                 <label for="Class">Class:</label>
                 <input type="text" id="Class" placeholder="................." maxlength="10" required>
             </div>
-            
-            
-        </div>
-        <div>
-            <label for="Sex">Sex:</label>
-            <select id="Sex">
-                <option value=".................">.................</option>
-                <option value="Female">Female</option>
-                <option value="Male">Male</option>
-              </select>
+        </div>    
             <div>
-            <label for="LVL">LVL:</label>
-            <input type="text" id="LVL" placeholder="................." maxlength="10" required><br>
+                <label for="Sex">Sex:</label>
+                <select id="Sex">
+                    <option value=".................">.................</option>
+                    <option value="Female">Female</option>
+                    <option value="Male">Male</option>
+                  </select>
+                <div>
+                <label for="LVL">LVL:</label>
+                <input type="text" id="LVL" placeholder="................." maxlength="10" required><br>
+                </div>
+                <label for="Experience">Experience:</label>
+                <input type="text" id="Experience" placeholder="................." maxlength="10" required>
             </div>
-            <label for="Experience">Experience:</label>
-            <input type="text" id="Experience" placeholder="................." maxlength="10" required>
         </div>
+    </div>
+        <div class="nested_name">
+            
+        </div>
+            
+        
+        
         <div>
             
                 <div>

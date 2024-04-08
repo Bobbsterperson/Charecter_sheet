@@ -23,6 +23,11 @@ input[type="number"]{
   font-size: 30px;
 } 
 
+input[type="radio"] {
+  width: 45px; 
+  height: 45px; 
+}
+
 .top_b_grid{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -49,6 +54,7 @@ input[type="number"]{
   width: 50px;
 }
 
+
 .box2_grid5{
   display: grid;
   grid-template-columns: auto auto auto auto auto;
@@ -66,7 +72,26 @@ input[type="number"]{
   border-bottom: #272727 2px solid;
   text-shadow: 0 0 5px rgb(83, 128, 252);
 }
+.flex{
+  text-align: end;
+}
 
+@media screen and (max-width: 768px) {
+  .box,
+  .box2,
+  .box2_grid3,
+  .box2_grid5 > div input {
+    font-size: 14px; 
+  }
+}
+@media screen and (max-width: 480px) {
+  .box,
+  .box2,
+  .box2_grid3,
+  .box2_grid5 > div input {
+    font-size: 12px; 
+  }
+}
 
 
 

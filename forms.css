@@ -4,10 +4,9 @@
   grid-auto-rows: minmax(70px, auto);
   background: #5dbbd3;
 }
-.box > input{
-  float: right;
+.box .box2_grid3 > div input{
+  display: flex;
 }
-
 
 .label {
   font-size: 40px;
@@ -42,6 +41,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
+
+
+
+
 
 
 

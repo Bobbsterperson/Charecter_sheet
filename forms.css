@@ -22,11 +22,17 @@ input[type="number"]{
   width: 230px;
   font-size: 30px;
 } 
+input[type="button"], button {
+  width: 45%; 
+  height: 30%; 
+  font-size: 150%;
+  margin: 5% ; 
+}
 
-input[type="radio"] {
+/*input[type="radio"] {
   width: 45px; 
   height: 45px; 
-}
+}*/
 
 .top_b_grid{
   display: grid;
@@ -51,7 +57,7 @@ input[type="radio"] {
 }
 
 .max{
-  width: 50px;
+  width: 20%;
 }
 
 

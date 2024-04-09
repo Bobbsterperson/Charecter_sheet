@@ -11,39 +11,39 @@
         <div class="box2_grid3">
             <div>
                 <label class="label" for="Name">Name:</label>
-                <input type="text" id="Name" placeholder="................." maxlength="10" required>
+                <input class="input_text" type="text" id="Name" placeholder="................." maxlength="10" required>
             </div>
             <div>
                 <label class="label" for="Race">Race:</label>
-                <input type="text" id="Race" placeholder="................." maxlength="10" required>
+                <input class="input_text" type="text" id="Race" placeholder="................." maxlength="10" required>
             </div>
             <div>
                 <label class="label" for="Class">Class:</label>
-                <input type="text" id="Class" placeholder="................." maxlength="10" required>
+                <input class="input_text" type="text" id="Class" placeholder="................." maxlength="10" required>
             </div>
         
         
             <div>
                 <label class="label" for="LVL">LVL:</label>
-                <input type="number" id="LVL" placeholder="................." maxlength="10" required>
+                <input class="input_number" type="number" id="LVL" placeholder="................." maxlength="10" required>
             </div>
             <div>
                 <label class="label" for="Experience">Experience:</label>
-                <input type="text" id="Experience" placeholder="................." maxlength="10" required>
+                <input class="input_text" type="text" id="Experience" placeholder="................." maxlength="10" required>
             </div>
             <div>
                 <label class="label" for="Sex">Sex:</label>
-                <input type="text" id="Sex" placeholder="................." maxlength="10" required>
+                <input class="input_text" type="text" id="Sex" placeholder="................." maxlength="10" required>
             </div>
         
         
             <div>
                 <label class="label" for="Speed">Speed:</label>
-                <input type="number" id="Speed" placeholder="................." maxlength="10" required>
+                <input class="input_number" type="number" id="Speed" placeholder="................." maxlength="10" required>
             </div>
             <div>
                 <label class="label" for="Initiative">Initiative:</label>
-                <input type="text" id="Initiative" placeholder="................." maxlength="10" required>
+                <input class="input_text" type="text" id="Initiative" placeholder="................." maxlength="10" required>
             </div>
             <div>
                 
@@ -59,88 +59,104 @@
             <div class="label2">BASE:</div>
                 <div class="box2_grid5">
                     <div class="border">STR</div>
-                    <div class="border">D4</div>
-                    <div class="border">D6</div>
-                    <div class="border">D8</div>
-                    <div class="border">D10</div>
-
+                    <div class="border">
+                        <input type="radio" id="D4str" value="D4str" name="str" checked>D4</div>
+                    <div class="border">
+                        <input type="radio" id="D6str" value="D6str" name="str">D6</div>
+                    <div class="border">
+                        <input type="radio" id="D8str" value="D8str" name="str">D8</div>
+                    <div class="border">
+                        <input type="radio" id="D10str" value="D10str" name="str">D10</div>
+                    
                     <div>DMG</div>
-                    <div>0</div>
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-
+                    <div class="flexs">0</div>
+                    <div class="flexs">1</div>
+                    <div class="flexs">2</div>
+                    <div class="flexs">3</div>
+    
                     <div>HP</div>
-                    <div>8</div>
-                    <div>10</div>
-                    <div>12</div>
-                    <div>14</div>
+                    <div class="flexs">8</div>
+                    <div class="flexs">10</div>
+                    <div class="flexs">12</div>
+                    <div class="flexs">14</div>
 
                     <div>HP Reg.</div>
-                    <div>6</div>
-                    <div>7</div>
-                    <div>8</div>
-                    <div>9</div>
+                    <div class="flexs">6</div>
+                    <div class="flexs">7</div>
+                    <div class="flexs">8</div>
+                    <div class="flexs">9</div>
 
                     <div class="border">DEX</div>
-                    <div class="border">D4</div>
-                    <div class="border">D6</div>
-                    <div class="border">D8</div>
-                    <div class="border">D10</div>
+                    <div class="border">
+                        <input type="radio" id="D4dex" value="D4dex" name="dex"checked>D4</div>
+                    <div class="border">
+                        <input type="radio" id="D6dex" value="D6dex" name="dex">D6</div>
+                    <div class="border">
+                        <input type="radio" id="D8dex" value="D8dex" name="dex">D8</div>
+                    <div class="border">
+                        <input type="radio" id="D10dex" value="D10dex" name="dex">D10</div>
 
                     <div>Accuracy(2+)</div>
-                    <div>D4</div>
-                    <div>D6</div>
-                    <div>D8</div>
-                    <div>D10</div>
+                    <div class="flexs">D4</div>
+                    <div class="flexs">D6</div>
+                    <div class="flexs">D8</div>
+                    <div class="flexs">D10</div>
 
                     <div>Evasion</div>
-                    <div>D4</div>
-                    <div>D6</div>
-                    <div>D8</div>
-                    <div>D10</div>
+                    <div class="flexs">D4</div>
+                    <div class="flexs">D6</div>
+                    <div class="flexs">D8</div>
+                    <div class="flexs">D10</div>
 
                     <div>Range</div>
-                    <div>+0</div>
-                    <div>+1</div>
-                    <div>+2</div>
-                    <div>+3</div>
+                    <div class="flexs">+0</div>
+                    <div class="flexs">+1</div>
+                    <div class="flexs">+2</div>
+                    <div class="flexs">+3</div>
 
                     <div class="border">INT</div>
-                    <div class="border">D4</div>
-                    <div class="border">D6</div>
-                    <div class="border">D8</div>
-                    <div class="border">D10</div>
+                    <div class="border">
+                        <input type="radio" id="D4int" value="D4int" name="int"checked>D4</div>
+                    <div class="border">
+                        <input type="radio" id="D6int" value="D6int" name="int">D6</div>
+                    <div class="border">
+                        <input type="radio" id="D8int" value="D8int" name="int">D8</div>
+                    <div class="border">
+                        <input type="radio" id="D10int" value="D10int" name="int">D10</div>
 
                     <div>Spell Power</div>
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                    <div>4</div>
+                    <div class="flexs">1</div>
+                    <div class="flexs">2</div>
+                    <div class="flexs">3</div>
+                    <div class="flexs">4</div>
 
                     <div>M.Resist</div>
-                    <div>0</div>
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
+                    <div class="flexs">0</div>
+                    <div class="flexs">1</div>
+                    <div class="flexs">2</div>
+                    <div class="flexs">3</div>
 
                     <div class="border">WIS</div>
-                    <div class="border">D4</div>
-                    <div class="border">D6</div>
-                    <div class="border">D8</div>
-                    <div class="border">D10</div>
+                    <div class="border">
+                        <input type="radio" id="D4wis" value="D4wis" name="wis" checked>D4</div>
+                    <div class="border">
+                        <input type="radio" id="D6wis" value="D6wis" name="wis">D6</div>
+                    <div class="border">
+                        <input type="radio" id="D8wis" value="D8wis" name="wis">D8</div>
+                    <div class="border">
+                        <input type="radio" id="D10wis" value="D10wis" name="wis">D10</div>
 
                     <div>MANA</div>
-                    <div>6</div>
-                    <div>8</div>
-                    <div>10</div>
-                    <div>12</div>
+                    <div class="flexs">6</div>
+                    <div class="flexs">8</div>
+                    <div class="flexs">10</div>
+                    <div class="flexs">12</div>
 
                     <div>Mana reg.</div>
-                    <div>2</div>
-                    <div>3</div>
-                    <div>4</div>
-                    <div>5</div>
+                    <div class="flexs">2</div>
+                    <div class="flexs">3</div>
+                    <div class="flexs">4</div>
+                    <div class="flexs">5</div>
 
                 </div>
             </div>
@@ -163,19 +179,19 @@
                     <label for="Lvl+3">Lvl+3</label>
                 </div>
                 <div>
-                    <div>+1</div>
-                    <div>+2</div>
-                    <div>+1</div>
+                    <div class="flexs">+1</div>
+                    <div class="flexs">+2</div>
+                    <div class="flexs">+1</div>
                 </div>
                 <div>
-                    <div>+2</div>
-                    <div>+4</div>
-                    <div>+2</div>
+                    <div class="flexs">+2</div>
+                    <div class="flexs">+4</div>
+                    <div class="flexs">+2</div>
                 </div>
                 <div>
-                    <div>+3</div>
-                    <div>+6</div>
-                    <div>+3</div>
+                    <div class="flexs">+3</div>
+                    <div class="flexs">+6</div>
+                    <div class="flexs">+3</div>
                 </div>
                 <div>
                     <input type="radio" id="Lvl+1" value="Lvl+1" name="buttons2-4">
@@ -190,19 +206,19 @@
                     <label for="Lvl+3">Lvl+3</label>
                 </div>
                 <div>
-                    <div>+1</div>
-                    <div>+1</div>
-                    <div>+1</div>
+                    <div class="flexs">+1</div>
+                    <div class="flexs">+1</div>
+                    <div class="flexs">+1</div>
                 </div>
                 <div>
-                    <div>+2</div>
-                    <div>+2</div>
-                    <div>+2</div>
+                    <div class="flexs">+2</div>
+                    <div class="flexs">+2</div>
+                    <div class="flexs">+2</div>
                 </div>
                 <div>
-                    <div>+3</div>
-                    <div>+3</div>
-                    <div>+3</div>
+                    <div class="flexs">+3</div>
+                    <div class="flexs">+3</div>
+                    <div class="flexs">+3</div>
                 </div>
                 <div>
                     <input type="radio" id="Lvl+1" value="Lvl+1" name="buttons3-4">
@@ -217,16 +233,16 @@
                     <label for="Lvl+3">Lvl+3</label>
                 </div>
                 <div>
-                    <div>+1</div>
-                    <div>+1</div>
+                    <div class="flexs">+1</div>
+                    <div class="flexs">+1</div>
                 </div>
                 <div>
-                    <div>+2</div>
-                    <div>+2</div>
+                    <div class="flexs">+2</div>
+                    <div class="flexs">+2</div>
                 </div>
                 <div>
-                    <div>+3</div>
-                    <div>+3</div>
+                    <div class="flexs">+3</div>
+                    <div class="flexs">+3</div>
                 </div>
                 <div>
                     <input type="radio" id="Lvl+1" value="Lvl+1" name="buttons4-4">
@@ -241,57 +257,57 @@
                     <label for="Lvl+3">Lvl+3</label>
                 </div>
                 <div class="box2_grid2">
-                    <div>+2</div>
-                    <div>+1</div>
+                    <div class="flexs">+2</div>
+                    <div class="flexs">+1</div>
                 </div>
                 <div class="box2_grid2">
-                    <div>+4</div>
-                    <div>+2</div>
+                    <div class="flexs">+4</div>
+                    <div class="flexs">+2</div>
                 </div>
                 <div>
-                    <div>+6</div>
-                    <div>+3</div>
+                    <div class="flexs">+6</div>
+                    <div class="flexs">+3</div>
                 </div>
             </div>
         </div>
     </div>
         <div class="box2">
-            <div class="flex">
+            <div>
                 <div>
                     <label for="HP:">HP:</label>
-                    <input type="number" id="HP:" placeholder="................." maxlength="10" required>
-                    /
-                    <input class="max" type="number" id="HP:" placeholder="/....." maxlength="10" required>
+                    <input class="input_number" type="number" id="HP:" placeholder="................." maxlength="10" required>
+                    <label class="label" for="">/</label>
+                    <input class="input_number_s" type="number" id="HP:" placeholder="....." maxlength="10" required>
                 </div>
-                <div>
+                <div class="flex">
                     <label for="ARMOR:">ARMOR:</label>
-                    <input type="text" id="ARMOR:" placeholder="................." maxlength="10" required>
+                    <input class="input_text" type="text" id="ARMOR:" placeholder="................." maxlength="10" required>
                 </div>
-                <div>
+                <div class="flex">
                     <label for="HP.REG:">HP.REG:</label>
-                    <input type="text" id="HP.REG:" placeholder="................." maxlength="10" required>
+                    <input  class="input_text" type="text" id="HP.REG:" placeholder="................." maxlength="10" required>
                 </div>
 
             </div>
-            <div class="flex">
+            <div>
                 <div>
                     <label for="MANA:">MANA:</label>
-                    <input type="number" id="MANA:" placeholder="................." maxlength="10" required>
-                    /
-                    <input class="max" type="number" id="MANA:" placeholder="/....." maxlength="10" required>
+                    <input class="input_number" type="number" id="MANA:" placeholder="................." maxlength="10" required>
+                    <label class="label" for="">/</label>
+                    <input class="input_number_s" type="number" id="MANA:" placeholder="....." maxlength="10" required>
                     
                 </div>
-                <div>
+                <div class="flex">
                     <label for="S.POWER:">S.POWER:</label>
-                    <input type="text" id="S.POWER:" placeholder="................." maxlength="10" required>
+                    <input class="input_text" type="text" id="S.POWER:" placeholder="................." maxlength="10" required>
                 </div>
-                <div>
+                <div class="flex">
                     <label for="M.RESIST:">M.RESIST:</label>
-                    <input type="text" id="M.RESIST:" placeholder="................." maxlength="10" required>
+                    <input class="input_text" type="text" id="M.RESIST:" placeholder="................." maxlength="10" required>
                 </div>
-                <div>
+                <div class="flex">
                     <label for="MANA REG:">MANA REG:</label>
-                    <input type="text" id="MANA REG:" placeholder="................." maxlength="10" required>
+                    <input class="input_text" type="text" id="MANA REG:" placeholder="................." maxlength="10" required>
                 </div>
             </div>
         </div>
@@ -300,35 +316,35 @@
                 EQUIPMENT:
                 <div>
                     <label for="Weapon 1:">Weapon 1:</label>
-                    <input type="text" id="Weapon 1:" placeholder="................." maxlength="10" required>
+                    <input class="input_text" type="text" id="Weapon 1:" placeholder="................." maxlength="10" required>
                 </div>
                 <div>
                     <label for="Weapon 2:">Weapon 2:</label>
-                    <input type="text" id="Weapon 2:" placeholder="................." maxlength="10" required>
+                    <input class="input_text" type="text" id="Weapon 2:" placeholder="................." maxlength="10" required>
                 </div>
                 <div>
                     <label for="Armor:">Armor:</label>
-                    <input type="text" id="Armor:" placeholder="................." maxlength="10" required>
+                    <input class="input_text" type="text" id="Armor:" placeholder="................." maxlength="10" required>
                 </div>
                 <div>
                     <label for="Helm:">Helm:</label>
-                    <input type="text" id="Helm:" placeholder="................." maxlength="10" required>
+                    <input class="input_text" type="text" id="Helm:" placeholder="................." maxlength="10" required>
                 </div>
                 <div>
                     <label for="Shield:">Shield:</label>
-                    <input type="text" id="Shield:" placeholder="................." maxlength="10" required>
+                    <input class="input_text" type="text" id="Shield:" placeholder="................." maxlength="10" required>
                 </div>
                 <div>
                     <label for="Other:">Other:</label>
-                    <input type="text" id="Other:" placeholder="................." maxlength="10" required>
+                    <input class="input_text" type="text" id="Other:" placeholder="................." maxlength="10" required>
                 </div>
                 <div>
                     <label for="Other:"></label>
-                    <input type="text" id="Other:" placeholder="................." maxlength="10" required>
+                    <input class="input_text" type="text" id="Other:" placeholder="................." maxlength="10" required>
                 </div>
                 <div>
                     <label for="Other:"></label>
-                    <input type="text" id="Other:" placeholder="................." maxlength="10" required>
+                    <input class="input_text" type="text" id="Other:" placeholder="................." maxlength="10" required>
                 </div>
                 
             </div>
@@ -336,35 +352,35 @@
                 SPELLS:
                 <div>
                     <label for="1.:">1.</label>
-                    <input type="text" id="1.:" placeholder="................." maxlength="10" required>
+                    <input class="input_text" type="text" id="1.:" placeholder="................." maxlength="10" required>
                 </div>
                 <div>
                     <label for="2.:">2.</label>
-                    <input type="text" id="2.:" placeholder="................." maxlength="10" required>
+                    <input class="input_text" type="text" id="2.:" placeholder="................." maxlength="10" required>
                 </div>
                 <div>
                     <label for="3.:">3.</label>
-                    <input type="text" id="3.:" placeholder="................." maxlength="10" required>
+                    <input class="input_text" type="text" id="3.:" placeholder="................." maxlength="10" required>
                 </div>
                 <div>
                     <label for="4.:">4.</label>
-                    <input type="text" id="4.:" placeholder="................." maxlength="10" required>
+                    <input class="input_text" type="text" id="4.:" placeholder="................." maxlength="10" required>
                 </div>
                 <div>
                     <label for="5.:">5.</label>
-                    <input type="text" id="5.:" placeholder="................." maxlength="10" required>
+                    <input class="input_text" type="text" id="5.:" placeholder="................." maxlength="10" required>
                 </div>
                 <div>
                     <label for="6.:">6.</label>
-                    <input type="text" id="6.:" placeholder="................." maxlength="10" required>
+                    <input class="input_text" type="text" id="6.:" placeholder="................." maxlength="10" required>
                 </div>
                 <div>
                     <label for="7.:">7.</label>
-                    <input type="text" id="7.:" placeholder="................." maxlength="10" required>
+                    <input class="input_text" type="text" id="7.:" placeholder="................." maxlength="10" required>
                 </div>
                 <div>
                     <label for="8.:">8.</label>
-                    <input type="text" id="8.:" placeholder="................." maxlength="10" required>
+                    <input class="input_text" type="text" id="8.:" placeholder="................." maxlength="10" required>
                 </div>
             </div>
         </div>

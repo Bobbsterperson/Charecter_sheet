@@ -4,9 +4,16 @@
 <head>
     <title>GAME sheet</title>
     <link href="forms.css" rel="stylesheet" type="text/css">
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"
+      integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 </head>
 
 <body>
+
     <div class="box">
         <div class="box2_grid3">
             <div>
@@ -47,7 +54,7 @@
             </div>
             <div>
                 
-                <input type="button" id="import" value="import">
+                <input type="file" id="import" value="import" onchange="read_file()" accept=".json">
                 <input type="button" id="export" value="export">
             </div>
         </div>

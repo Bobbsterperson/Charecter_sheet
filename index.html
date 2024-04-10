@@ -53,9 +53,10 @@
                 <input class="input_text" type="text" id="Initiative" placeholder="................." maxlength="10" required>
             </div>
             <div>
-                
-                <input type="file" id="import" value="import" onchange="read_file()" accept=".json">
-                <input type="button" id="export" value="export">
+                <label for="import" class="file-input-label">Import</label>
+                <input type="file" id="import" style="display: none;" onchange="read_file()" accept=".json">
+                <!-- <label for="export" class="file-input-label">Export</label> -->
+                <input type="button" id="export" value="Export">
             </div>
         </div>
     </div>
@@ -282,39 +283,39 @@
             <div>
                 <div>
                     <label for="HP:">HP:</label>
-                    <input class="input_number" type="number" id="HP:" placeholder="................." maxlength="10" required>
+                    <input class="input_number" type="number" id="HP" placeholder="................." maxlength="10" required>
                     <label class="label" for="">/</label>
-                    <input class="input_number_s" type="number" id="HP:" placeholder="....." maxlength="10" required>
+                    <input class="input_number_s" type="number" id="HPMax" placeholder="....." maxlength="10" required>
                 </div>
                 <div class="flex">
                     <label for="ARMOR:">ARMOR:</label>
-                    <input class="input_text" type="text" id="ARMOR:" placeholder="................." maxlength="10" required>
+                    <input class="input_text" type="text" id="ARMOR" placeholder="................." maxlength="10" required>
                 </div>
                 <div class="flex">
                     <label for="HP.REG:">HP.REG:</label>
-                    <input  class="input_text" type="text" id="HP.REG:" placeholder="................." maxlength="10" required>
+                    <input  class="input_text" type="text" id="HPREG" placeholder="................." maxlength="10" required>
                 </div>
 
             </div>
             <div>
                 <div>
                     <label for="MANA:">MANA:</label>
-                    <input class="input_number" type="number" id="MANA:" placeholder="................." maxlength="10" required>
+                    <input class="input_number" type="number" id="MANA" placeholder="................." maxlength="10" required>
                     <label class="label" for="">/</label>
-                    <input class="input_number_s" type="number" id="MANA:" placeholder="....." maxlength="10" required>
+                    <input class="input_number_s" type="number" id="MANAMax" placeholder="....." maxlength="10" required>
                     
                 </div>
                 <div class="flex">
                     <label for="S.POWER:">S.POWER:</label>
-                    <input class="input_text" type="text" id="S.POWER:" placeholder="................." maxlength="10" required>
+                    <input class="input_text" type="text" id="SPower" placeholder="................." maxlength="10" required>
                 </div>
                 <div class="flex">
                     <label for="M.RESIST:">M.RESIST:</label>
-                    <input class="input_text" type="text" id="M.RESIST:" placeholder="................." maxlength="10" required>
+                    <input class="input_text" type="text" id="MRESIST" placeholder="................." maxlength="10" required>
                 </div>
                 <div class="flex">
                     <label for="MANA REG:">MANA REG:</label>
-                    <input class="input_text" type="text" id="MANA REG:" placeholder="................." maxlength="10" required>
+                    <input class="input_text" type="text" id="MANAReg" placeholder="................." maxlength="10" required>
                 </div>
             </div>
         </div>
@@ -323,35 +324,35 @@
                 EQUIPMENT:
                 <div>
                     <label for="Weapon 1:">Weapon 1:</label>
-                    <input class="input_text" type="text" id="Weapon 1:" placeholder="................." maxlength="10" required>
+                    <input class="input_text" type="text" id="Weapon1" placeholder="................." maxlength="10" required>
                 </div>
                 <div>
                     <label for="Weapon 2:">Weapon 2:</label>
-                    <input class="input_text" type="text" id="Weapon 2:" placeholder="................." maxlength="10" required>
+                    <input class="input_text" type="text" id="Weapon2" placeholder="................." maxlength="10" required>
                 </div>
                 <div>
                     <label for="Armor:">Armor:</label>
-                    <input class="input_text" type="text" id="Armor:" placeholder="................." maxlength="10" required>
+                    <input class="input_text" type="text" id="Armor" placeholder="................." maxlength="10" required>
                 </div>
                 <div>
                     <label for="Helm:">Helm:</label>
-                    <input class="input_text" type="text" id="Helm:" placeholder="................." maxlength="10" required>
+                    <input class="input_text" type="text" id="Helm" placeholder="................." maxlength="10" required>
                 </div>
                 <div>
                     <label for="Shield:">Shield:</label>
-                    <input class="input_text" type="text" id="Shield:" placeholder="................." maxlength="10" required>
+                    <input class="input_text" type="text" id="Shield" placeholder="................." maxlength="10" required>
                 </div>
                 <div>
                     <label for="Other:">Other:</label>
-                    <input class="input_text" type="text" id="Other:" placeholder="................." maxlength="10" required>
+                    <input class="input_text" type="text" id="Other1" placeholder="................." maxlength="10" required>
                 </div>
                 <div>
                     <label for="Other:"></label>
-                    <input class="input_text" type="text" id="Other:" placeholder="................." maxlength="10" required>
+                    <input class="input_text" type="text" id="Other2" placeholder="................." maxlength="10" required>
                 </div>
                 <div>
                     <label for="Other:"></label>
-                    <input class="input_text" type="text" id="Other:" placeholder="................." maxlength="10" required>
+                    <input class="input_text" type="text" id="Other3" placeholder="................." maxlength="10" required>
                 </div>
                 
             </div>
@@ -359,35 +360,35 @@
                 SPELLS:
                 <div>
                     <label for="1.:">1.</label>
-                    <input class="input_text" type="text" id="1.:" placeholder="................." maxlength="10" required>
+                    <input class="input_text" type="text" id="1." placeholder="................." maxlength="10" required>
                 </div>
                 <div>
                     <label for="2.:">2.</label>
-                    <input class="input_text" type="text" id="2.:" placeholder="................." maxlength="10" required>
+                    <input class="input_text" type="text" id="2." placeholder="................." maxlength="10" required>
                 </div>
                 <div>
                     <label for="3.:">3.</label>
-                    <input class="input_text" type="text" id="3.:" placeholder="................." maxlength="10" required>
+                    <input class="input_text" type="text" id="3." placeholder="................." maxlength="10" required>
                 </div>
                 <div>
                     <label for="4.:">4.</label>
-                    <input class="input_text" type="text" id="4.:" placeholder="................." maxlength="10" required>
+                    <input class="input_text" type="text" id="4." placeholder="................." maxlength="10" required>
                 </div>
                 <div>
                     <label for="5.:">5.</label>
-                    <input class="input_text" type="text" id="5.:" placeholder="................." maxlength="10" required>
+                    <input class="input_text" type="text" id="5." placeholder="................." maxlength="10" required>
                 </div>
                 <div>
                     <label for="6.:">6.</label>
-                    <input class="input_text" type="text" id="6.:" placeholder="................." maxlength="10" required>
+                    <input class="input_text" type="text" id="6." placeholder="................." maxlength="10" required>
                 </div>
                 <div>
                     <label for="7.:">7.</label>
-                    <input class="input_text" type="text" id="7.:" placeholder="................." maxlength="10" required>
+                    <input class="input_text" type="text" id="7." placeholder="................." maxlength="10" required>
                 </div>
                 <div>
                     <label for="8.:">8.</label>
-                    <input class="input_text" type="text" id="8.:" placeholder="................." maxlength="10" required>
+                    <input class="input_text" type="text" id="8." placeholder="................." maxlength="10" required>
                 </div>
             </div>
         </div>

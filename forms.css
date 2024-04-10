@@ -28,10 +28,21 @@
   font-size: 30px;
 } 
 input[type="button"], button {
-  width: 45%; 
-  height: 30%; 
-  font-size: 150%;
-  margin: 5% ; 
+  background-color: #007bff;
+  color: #fff;
+  padding: 1em;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.file-input-label {
+  background-color: #007bff;
+  color: #fff;
+  padding: 1em;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
 }
 
 /*input[type="radio"] {

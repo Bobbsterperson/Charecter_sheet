@@ -35,6 +35,9 @@ input[type="button"], button {
   cursor: pointer;
   display: inline-block;
 }
+.hide_button {
+display: none !important; 
+}
 
 .file-input-label {
   background-color: #007bff;

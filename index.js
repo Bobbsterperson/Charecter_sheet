@@ -102,34 +102,34 @@ function write_to_file(data) {
         Spell6: data.Spell6.value,
         Spell7: data.Spell7.value,
         Spell8: data.Spell8.value,
-        radstrD4: data.radstrD4.value,
-        radstrD6: data.radstrD6.value,
-        radstrD8: data.radstrD8.value,
-        radstrD10: data.radstrD10.value,
-        raddexD4: data.raddexD4.value,
-        raddexD6: data.raddexD6.value,
-        raddexD8: data.raddexD8.value,
-        raddexD10: data.raddexD10.value,
-        radintD4: data.radintD4.value,
-        radintD6: data.radintD6.value,
-        radintD8: data.radintD8.value,
-        radintD10: data.radintD10.value,
-        radwisD4: data.radwisD4.value,
-        radwisD6: data.radwisD6.value,
-        radwisD8: data.radwisD8.value,
-        radwisD10: data.radwisD10.value,
-        radLVLstr1: data.radLVLstr1.value,
-        radLVLstr2: data.radLVLstr2.value,
-        radLVLstr3: data.radLVLstr3.value,
-        radLVLdex1: data.radLVLdex1.value,
-        radLVLdex2: data.radLVLdex2.value,
-        radLVLdex3: data.radLVLdex3.value,
-        radLVLint1: data.radLVLint1.value,
-        radLVLint2: data.radLVLint2.value,
-        radLVLint3: data.radLVLint3.value,
-        radLVLwis1: data.radLVLwis1.value,
-        radLVLwis2: data.radLVLwis2.value,
-        radLVLwis3: data.radLVLwis3.value
+        radstrD4: data.radstrD4.checked,
+        radstrD6: data.radstrD6.checked,
+        radstrD8: data.radstrD8.checked,
+        radstrD10: data.radstrD10.checked,
+        raddexD4: data.raddexD4.checked,
+        raddexD6: data.raddexD6.checked,
+        raddexD8: data.raddexD8.checked,
+        raddexD10: data.raddexD10.checked,
+        radintD4: data.radintD4.checked,
+        radintD6: data.radintD6.checked,
+        radintD8: data.radintD8.checked,
+        radintD10: data.radintD10.checked,
+        radwisD4: data.radwisD4.checked,
+        radwisD6: data.radwisD6.checked,
+        radwisD8: data.radwisD8.checked,
+        radwisD10: data.radwisD10.checked,
+        radLVLstr1: data.radLVLstr1.checked,
+        radLVLstr2: data.radLVLstr2.checked,
+        radLVLstr3: data.radLVLstr3.checked,
+        radLVLdex1: data.radLVLdex1.checked,
+        radLVLdex2: data.radLVLdex2.checked,
+        radLVLdex3: data.radLVLdex3.checked,
+        radLVLint1: data.radLVLint1.checked,
+        radLVLint2: data.radLVLint2.checked,
+        radLVLint3: data.radLVLint3.checked,
+        radLVLwis1: data.radLVLwis1.checked,
+        radLVLwis2: data.radLVLwis2.checked,
+        radLVLwis3: data.radLVLwis3.checked
     }
 
 const blob = new Blob([JSON.stringify(data_to_write)], { type: 'text/plain;charset=utf-8' });
@@ -171,35 +171,37 @@ function read_from_file(data, json) {
     data.Spell6.value = json.Spell6
     data.Spell7.value = json.Spell7
     data.Spell8.value = json.Spell8
-    data.radstrD4.value = json.radstrD4
-    data.radstrD6.value = json.radstrD6
-    data.radstrD8.value = json.radstrD6
-    data.radstrD10.value = json.radstrD10
-    data.raddexD4.value = json.raddexD4
-    data.raddexD6.value = json.raddexD6
-    data.raddexD8.value = json.raddexD8
-    data.raddexD10.value = json.raddexD10
-    data.radintD4.value = json.radintD4
-    data.radintD6.value = json.radintD6
-    data.radintD8.value = json.radintD8
-    data.radintD10.value = json.radintD10
-    data.radwisD4.value = json.radwisD4
-    data.radwisD6.value = json.radwisD6
-    data.radwisD8.value = json.radwisD8
-    data.radwisD10.value = json.radwisD10
-    data.radLVLstr1.value = json.radLVLstr1
-    data.radLVLstr2.value = json.radLVLstr2
-    data.radLVLstr3.value = json.radLVLstr3
-    data.radLVLdex1.value = json.radLVLdex1
-    data.radLVLdex2.value = json.radLVLdex2
-    data.radLVLdex3.value = json.radLVLdex3
-    data.radLVLint1.value = json.radLVLint1
-    data.radLVLint2.value = json.radLVLint2
-    data.radLVLint3.value = json.radLVLint3
-    data.radLVLwis1.value = json.radLVLwis1
-    data.radLVLwis2.value = json.radLVLwis2
-    data.radLVLwis3.value = json.radLVLwis3
+    data.radstrD4.checked = json.radstrD4
+    data.radstrD6.checked = json.radstrD6
+    data.radstrD8.checked = json.radstrD6
+    data.radstrD10.checked = json.radstrD10
+    data.raddexD4.checked = json.raddexD4
+    data.raddexD6.checked = json.raddexD6
+    data.raddexD8.checked = json.raddexD8
+    data.raddexD10.checked = json.raddexD10
+    data.radintD4.checked = json.radintD4
+    data.radintD6.checked = json.radintD6
+    data.radintD8.checked = json.radintD8
+    data.radintD10.checked = json.radintD10
+    data.radwisD4.checked = json.radwisD4
+    data.radwisD6.checked = json.radwisD6
+    data.radwisD8.checked = json.radwisD8
+    data.radwisD10.checked = json.radwisD10
+    data.radLVLstr1.checked = json.radLVLstr1
+    data.radLVLstr2.checked = json.radLVLstr2
+    data.radLVLstr3.checked = json.radLVLstr3
+    data.radLVLdex1.checked = json.radLVLdex1
+    data.radLVLdex2.checked = json.radLVLdex2
+    data.radLVLdex3.checked = json.radLVLdex3
+    data.radLVLint1.checked = json.radLVLint1
+    data.radLVLint2.checked = json.radLVLint2
+    data.radLVLint3.checked = json.radLVLint3
+    data.radLVLwis1.checked = json.radLVLwis1
+    data.radLVLwis2.checked = json.radLVLwis2
+    data.radLVLwis3.checked = json.radLVLwis3
 }
+
+
 
 document.getElementById('export').addEventListener('click', function() {
     write_to_file(fields)

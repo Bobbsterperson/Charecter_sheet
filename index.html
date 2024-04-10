@@ -10,6 +10,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    
 </head>
 
 <body>
@@ -54,9 +55,9 @@
             </div>
             <div>
                 <label for="import" class="file-input-label">Import</label>
-                <input type="file" id="import" style="display: none;" onchange="read_file()" accept=".json">
-                <!-- <label for="export" class="file-input-label">Export</label> -->
-                <input type="button" id="export" value="Export">
+                <input type="file" id="import" class="hide_button" onchange="read_file()" accept=".json">
+                <label for="export" class="file-input-label">Export</label>
+                <input type="button" id="export" value="Export" class="hide_button">
             </div>
         </div>
     </div>

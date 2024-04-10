@@ -14,7 +14,7 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 }
 .label {
-  font-size: 20px;
+  font-size: 30px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
   
 }
@@ -37,7 +37,7 @@
 } 
 .input_number_s[type="number"]{
   height: 50px;
-  width: 100px;
+  width: 80px;
   font-size: 30px;
 } 
 input[type="button"], button {
@@ -119,6 +119,8 @@ display: none !important;
 }
 .flexs{
   text-align: center;
+  font-weight: 700;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 }
 
 @media screen and (max-width: 768px) {

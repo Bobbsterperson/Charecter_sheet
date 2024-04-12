@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .big_boxes_topdown {
+        display: grid;
+        grid-template-rows: auto;
+        grid-auto-rows: minmax(auto);
+        background: #76a595;
+        border: #272727 2px solid;
+      }
+      .top_box_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: minmax(auto);
+        background: #76a595;
+        border: #272727 2px solid;
+      }
+      .middle_box_grid{
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr 1fr 2fr 2fr 2fr;
+        grid-auto-rows: minmax(auto);
+        background: #bfb0c2;
+      }
+      .bottom_box_grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: minmax(auto);
+        background: #5FFAC5;
+        border: #272727 2px solid;
+      }
+      .bottomest_box_grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: minmax(auto);
+        background: #76a595;
+        border: #272727 2px solid;
+      }
+      .top_box_style{
+        font-size: 170%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .input_text{
+        height: 50px;
+        width: 230px;
+        font-size: 30px;
+      }
+.hide_button {
+display: none !important; 
+}
+.file-input-label {
+  background-color: #ff007b;
+  color: #fff;
+  padding: 1em;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+}
+.label {
+  font-size: 40px;
+}
+    </style>
+  </head>
+
+  <body>
+    <div class="big_boxes_topdown">
+        <div class="top_box_grid top_box_style">
+            <div><label for="Name">Name:</label><br>
+                <input class="input_text" type="text" id="Name" placeholder="................." maxlength="10" required></div>
+            <div><label for="Race">Race:</label><br>
+                <input class="input_text" type="text" id="Race" placeholder="................." maxlength="10" required></div>
+            <div><label for="Class">Class:</label><br>
+                <input class="input_text" type="text" id="Class" placeholder="................." maxlength="10" required></div>
+            <div><label for="LVL">LVL:</label><br>
+                <input class="input_text" type="number" id="LVL" placeholder="................." maxlength="10" required></div>
+            <div><label for="Experience">Experience:</label><br>
+                <input class="input_text" type="number" id="Experience" placeholder="................." maxlength="10" required></div>
+            <div><label for="Sex">Sex:</label><br>
+                <select class="input_text" name="Sex" id="Sex">
+                <option >------</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Kamenarec">Kamenarec</option>
+                <option value="Helicopter">Helicopter</option>
+                <option value="Ficus-fecalis">Ficus-fecalis</option>
+                <option value="Pupesh">Pupesh</option>
+                <option value="Transformer">Transformer</option>
+                </select></div>
+            <div><label for="Speed">Speed:</label><br>
+                <input class="input_text" type="number" id="Speed" placeholder="................." maxlength="10" required></div>
+            <div><label for="Initiative">Initiative:</label><br>
+                <input class="input_text" type="number" id="Initiative" placeholder="................." maxlength="10" required></div>
+            <div>
+                <label for="import" class="file-input-label">Import</label>
+                <input class="hide_button" type="file" id="import"  onchange="read_file()" accept=".json">
+                <label for="export" class="file-input-label">Export</label>
+                <input class="hide_button" type="button" id="export" value="Export" ></div>
+        </div>
+
+
+
+        <div class="middle_box_grid">
+            <div class="label">BASE:</div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div class="label">LVL UP</div>
+            <div></div>
+            <div></div>
+
+
+            <div>STR</div>
+            <div><input type="radio" id="D4str" name="str" checked>D4</div>
+            <div><input type="radio" id="D6str" name="str">D6</div>
+            <div><input type="radio" id="D6str" name="str">D8</div>
+            <div><input type="radio" id="D6str" name="str">D10</div>
+            <div><input  type="radio" id="lvUstrLvl+1" value="Lvl+1" name="buttons1-4">
+            <label for="Lvl+1">Lvl+1</label></div>
+            <div><input type="radio" id="lvUstrLvl+2" value="Lvl+2" name="buttons1-4">
+            <label for="Lvl+2">Lvl+2</label></div>
+            <div><input type="radio" id="lvUstrLvl+3" value="Lvl+3" name="buttons1-4">
+            <label for="Lvl+3">Lvl+3</label>
+            </div>
+        
+
+            <div>dmg</div>
+            <div>0</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>+1</div>
+            <div>+2</div>
+            <div>+3</div>
+        
+            <div>dmg</div>
+            <div>0</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>+1</div>
+            <div>+2</div>
+            <div>+3</div>
+        
+            <div>dmg</div>
+            <div>0</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>+1</div>
+            <div>+2</div>
+            <div>+3</div>
+        
+            <div>DEX</div>
+            <div><input type="radio" id="D4dex" name="dex" checked>D4</div>
+            <div><input type="radio" id="D6dex" name="dex">D6</div>
+            <div><input type="radio" id="D6dex" name="dex">D8</div>
+            <div><input type="radio" id="D6dex" name="dex">D10</div>
+            <div>lvl1</div>
+            <div>lvl2</div>
+            <div>lvl3</div>
+        
+            <div>dmg</div>
+            <div>0</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>+1</div>
+            <div>+2</div>
+            <div>+3</div>
+        
+            <div>dmg</div>
+            <div>0</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>+1</div>
+            <div>+2</div>
+            <div>+3</div>
+        
+            <div>dmg</div>
+            <div>0</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>+1</div>
+            <div>+2</div>
+            <div>+3</div>
+        
+            <div>INT</div>
+            <div><input type="radio" id="D4strint" name="strint" checked>D4</div>
+            <div><input type="radio" id="D6strint" name="strint">D6</div>
+            <div><input type="radio" id="D6strint" name="strint">D8</div>
+            <div><input type="radio" id="D6strint" name="strint">D10</div>
+            <div>lvl1</div>
+            <div>lvl2</div>
+            <div>lvl3</div>
+        
+            <div>dmg</div>
+            <div>0</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>+1</div>
+            <div>+2</div>
+            <div>+3</div>
+        
+            <div>dmg</div>
+            <div>0</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>+1</div>
+            <div>+2</div>
+            <div>+3</div>
+        
+            <div>WIS</div>
+            <div><input type="radio" id="D4wis" name="wis" checked>D4</div>
+            <div><input type="radio" id="D6wis" name="wis">D6</div>
+            <div><input type="radio" id="D6wis" name="wis">D8</div>
+            <div><input type="radio" id="D6wis" name="wis">D10</div>
+            <div>lvl1</div>
+            <div>lvl2</div>
+            <div>lvl3</div>
+        
+            <div>dmg</div>
+            <div>0</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>+1</div>
+            <div>+2</div>
+            <div>+3</div>
+        
+            <div>dmg</div>
+            <div>0</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>+1</div>
+            <div>+2</div>
+            <div>+3</div>
+        </div>
+        <div class="bottom_box_grid">
+            <div>hp</div>
+            <div>armor</div>
+            <div>hpreg</div>
+            <div>mana</div>
+            <div>SPower</div>
+            <div>mres</div>
+            <div></div>
+            <div>manareg</div>
+        </div>
+        <div class="bottomest_box_grid">
+            <div>equipment</div>
+            <div>spels</div>
+            <div>weapon1</div>
+            <div>1.</div>
+            <div>weapon2</div>
+            <div>2.</div>
+        </div>
+            
+            
+        </div>
+    </div>
+  </body>
+</html>

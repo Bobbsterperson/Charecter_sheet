@@ -16,6 +16,9 @@
         background: #76a595;
         border: #272727 2px solid;
       }
+      .top_box_grid> div:nth-child(odd){
+         background: #85bdaa;
+        }
       .middle_box_grid{
         display: grid;
         grid-template-columns: 2fr 1fr 1fr 1fr 1fr 2fr 2fr 2fr;
@@ -29,6 +32,9 @@
         background: #5FFAC5;
         border: #272727 2px solid;
       }
+      .bottom_box_grid> div:nth-child(odd){
+         background: #86ccb5;
+        }
       .bottomest_box_grid{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -36,6 +42,9 @@
         background: #76a595;
         border: #272727 2px solid;
       }
+      .bottomest_box_grid> div:nth-child(odd){
+         background: #87ddc0;
+        }
       .top_box_style{
         font-size: 170%;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -59,6 +68,48 @@ display: none !important;
 .label {
   font-size: 40px;
 }
+.positionl{
+  text-align: left;
+}
+.position{
+  text-align: center;
+}
+.text_size{
+    font-size: 130%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+input[type="radio"] {
+  width: 25px; 
+  height: 25px; 
+}
+@media screen and (max-width: 768px) {
+  .box,
+  .box2,
+  .box2_grid3,
+  .box2_grid6 > div input {
+    font-size: 14px; 
+  }
+}
+@media screen and (max-width: 480px) {
+  .box,
+  .box2,
+  .box2_grid3,
+  .box2_grid6 > div input {
+    font-size: 12px; 
+  }
+}
+.border{
+  border-top:#272727 2px solid;
+  border-bottom: #272727 2px solid;
+  text-shadow: 0 0 5px rgb(83, 128, 252);
+}
+.borderm{
+  border-right:#272727 2px solid;
+}
+.backgroundb{
+    background: #cccba7;
+}
+
     </style>
   </head>
 
@@ -99,144 +150,156 @@ display: none !important;
 
 
 
-        <div class="middle_box_grid">
+        <div class="middle_box_grid position text_size">
             <div class="label">BASE:</div>
             <div></div>
             <div></div>
             <div></div>
-            <div></div>
+            <div class=" borderm"></div>
             <div class="label">LVL UP</div>
             <div></div>
             <div></div>
 
 
-            <div>STR</div>
-            <div><input type="radio" id="D4str" name="str" checked>D4</div>
-            <div><input type="radio" id="D6str" name="str">D6</div>
-            <div><input type="radio" id="D6str" name="str">D8</div>
-            <div><input type="radio" id="D6str" name="str">D10</div>
-            <div><input  type="radio" id="lvUstrLvl+1" value="Lvl+1" name="buttons1-4">
+            <div class="backgroundb  positionl border">STR</div>
+            <div class="backgroundb border"><input type="radio" id="D4str" name="str" checked>D4</div>
+            <di class="backgroundb border"><input type="radio" id="D6str" name="str">D6</di>
+            <div class="backgroundb border"><input type="radio" id="D6str" name="str">D8</div>
+            <div class="backgroundb border borderm"><input type="radio" id="D6str" name="str">D10</div>
+            <div class="backgroundb border"><input  type="radio" id="lvUstrLvl+1" value="Lvl+1" name="buttons1-4">
             <label for="Lvl+1">Lvl+1</label></div>
-            <div><input type="radio" id="lvUstrLvl+2" value="Lvl+2" name="buttons1-4">
+            <div class="backgroundb border"><input type="radio" id="lvUstrLvl+2" value="Lvl+2" name="buttons1-4">
             <label for="Lvl+2">Lvl+2</label></div>
-            <div><input type="radio" id="lvUstrLvl+3" value="Lvl+3" name="buttons1-4">
+            <div class="backgroundb  border"><input type="radio" id="lvUstrLvl+3" value="Lvl+3" name="buttons1-4">
             <label for="Lvl+3">Lvl+3</label>
             </div>
         
 
-            <div>dmg</div>
+            <div class="positionl">DMG</div>
             <div>0</div>
             <div>1</div>
             <div>2</div>
-            <div>3</div>
+            <div class="borderm">3</div>
             <div>+1</div>
             <div>+2</div>
             <div>+3</div>
         
-            <div>dmg</div>
-            <div>0</div>
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
+            <div class="positionl">HP</div>
+            <div>8</div>
+            <div>10</div>
+            <div>12</div>
+            <div class=" borderm">14</div>
+            <div>+2</div>
+            <div>+4</div>
+            <div>+6</div>
+        
+            <div class="positionl">HP Reg.</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div class=" borderm">9</div>
             <div>+1</div>
             <div>+2</div>
             <div>+3</div>
         
-            <div>dmg</div>
-            <div>0</div>
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
+            <div class="backgroundb positionl border">DEX</div>
+            <div class="backgroundb border"><input type="radio" id="D4dex" name="dex" checked>D4</div>
+            <div class="backgroundb border"><input type="radio" id="D6dex" name="dex">D6</div>
+            <div class="backgroundb border"><input type="radio" id="D6dex" name="dex">D8</div>
+            <div class="backgroundb border borderm"><input type="radio" id="D6dex" name="dex">D10</div>
+            <div class="backgroundb border"><input  type="radio" id="lvUstrLvl+1" value="Lvl+1" name="buttons2-4">
+                <label for="Lvl+1">Lvl+1</label></div>
+                <div class="backgroundb border"><input type="radio" id="lvUstrLvl+2" value="Lvl+2" name="buttons2-4">
+                <label for="Lvl+2">Lvl+2</label></div>
+                <div class="backgroundb border"><input type="radio" id="lvUstrLvl+3" value="Lvl+3" name="buttons2-4">
+                <label for="Lvl+3">Lvl+3</label>
+                </div>
+        
+            <div class="positionl">Accuracy(2+)</div>
+            <div>D4</div>
+            <div>D6</div>
+            <div>D8</div>
+            <div class=" borderm">D10</div>
             <div>+1</div>
             <div>+2</div>
             <div>+3</div>
         
-            <div>DEX</div>
-            <div><input type="radio" id="D4dex" name="dex" checked>D4</div>
-            <div><input type="radio" id="D6dex" name="dex">D6</div>
-            <div><input type="radio" id="D6dex" name="dex">D8</div>
-            <div><input type="radio" id="D6dex" name="dex">D10</div>
-            <div>lvl1</div>
-            <div>lvl2</div>
-            <div>lvl3</div>
-        
-            <div>dmg</div>
-            <div>0</div>
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
+            <div class="positionl">Evasion</div>
+            <div>D4</div>
+            <div>D6</div>
+            <div>D8</div>
+            <div class=" borderm">D10</div>
             <div>+1</div>
             <div>+2</div>
             <div>+3</div>
         
-            <div>dmg</div>
-            <div>0</div>
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
+            <div class="positionl">Range</div>
+            <div>+0</div>
+            <div>+1</div>
+            <div>+2</div>
+            <div class=" borderm">+3</div>
             <div>+1</div>
             <div>+2</div>
             <div>+3</div>
         
-            <div>dmg</div>
-            <div>0</div>
+            <div class="backgroundb positionl border">INT</div>
+            <div class="backgroundb border"><input type="radio" id="D4strint" name="strint" checked>D4</div>
+            <div class="backgroundb border"><input type="radio" id="D6strint" name="strint">D6</div>
+            <div class="backgroundb border"><input type="radio" id="D6strint" name="strint">D8</div>
+            <div class="backgroundb border borderm"><input type="radio" id="D6strint" name="strint">D10</div>
+            <div class="backgroundb border"><input  type="radio" id="lvUstrLvl+1" value="Lvl+1" name="buttons3-4">
+                <label for="Lvl+1">Lvl+1</label></div>
+                <div class="backgroundb border"><input type="radio" id="lvUstrLvl+2" value="Lvl+2" name="buttons3-4">
+                <label for="Lvl+2">Lvl+2</label></div>
+                <div class="backgroundb border"><input type="radio" id="lvUstrLvl+3" value="Lvl+3" name="buttons3-4">
+                <label for="Lvl+3">Lvl+3</label>
+                </div>
+        
+            <div class="positionl">Spell Power</div>
             <div>1</div>
             <div>2</div>
             <div>3</div>
+            <div class=" borderm">4</div>
             <div>+1</div>
             <div>+2</div>
             <div>+3</div>
         
-            <div>INT</div>
-            <div><input type="radio" id="D4strint" name="strint" checked>D4</div>
-            <div><input type="radio" id="D6strint" name="strint">D6</div>
-            <div><input type="radio" id="D6strint" name="strint">D8</div>
-            <div><input type="radio" id="D6strint" name="strint">D10</div>
-            <div>lvl1</div>
-            <div>lvl2</div>
-            <div>lvl3</div>
-        
-            <div>dmg</div>
+            <div class="positionl">M.Resist</div>
             <div>0</div>
             <div>1</div>
             <div>2</div>
-            <div>3</div>
+            <div class=" borderm">3</div>
             <div>+1</div>
             <div>+2</div>
             <div>+3</div>
         
-            <div>dmg</div>
-            <div>0</div>
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>+1</div>
+            <div class="backgroundb positionl border">WIS</div>
+            <div class="backgroundb border"><input type="radio" id="D4wis" name="wis" checked>D4</div>
+            <div class="backgroundb border"><input type="radio" id="D6wis" name="wis">D6</div>
+            <div class="backgroundb border"><input type="radio" id="D6wis" name="wis">D8</div>
+            <div class="backgroundb border borderm"><input type="radio" id="D6wis" name="wis">D10</div>
+            <div class="backgroundb border"><input  type="radio" id="lvUstrLvl+1" value="Lvl+1" name="buttons4-4">
+                <label for="Lvl+1">Lvl+1</label></div>
+                <div class="backgroundb border"><input type="radio" id="lvUstrLvl+2" value="Lvl+2" name="buttons4-4">
+                <label for="Lvl+2">Lvl+2</label></div>
+                <div class="backgroundb border"><input type="radio" id="lvUstrLvl+3" value="Lvl+3" name="buttons4-4">
+                <label for="Lvl+3">Lvl+3</label>
+                </div>
+        
+            <div class="positionl">MANA</div>
+            <div>6</div>
+            <div>8</div>
+            <div>10</div>
+            <div class=" borderm">12</div>
             <div>+2</div>
-            <div>+3</div>
+            <div>+4</div>
+            <div>+6</div>
         
-            <div>WIS</div>
-            <div><input type="radio" id="D4wis" name="wis" checked>D4</div>
-            <div><input type="radio" id="D6wis" name="wis">D6</div>
-            <div><input type="radio" id="D6wis" name="wis">D8</div>
-            <div><input type="radio" id="D6wis" name="wis">D10</div>
-            <div>lvl1</div>
-            <div>lvl2</div>
-            <div>lvl3</div>
-        
-            <div>dmg</div>
-            <div>0</div>
-            <div>1</div>
+            <div class="positionl">Mana Regen</div>
             <div>2</div>
             <div>3</div>
-            <div>+1</div>
-            <div>+2</div>
-            <div>+3</div>
-        
-            <div>dmg</div>
-            <div>0</div>
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
+            <div>4</div>
+            <div class=" borderm">5</div>
             <div>+1</div>
             <div>+2</div>
             <div>+3</div>

@@ -76,7 +76,7 @@ input[type="radio"] {
 .small{
   
   font-size: 10px;
-  font-weight: 700;
+  
   
 }
 
@@ -102,7 +102,7 @@ input[type="radio"] {
 
 .box2_grid6{
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: auto auto auto auto auto auto;
 }
 
 .box2_grid3{
@@ -134,7 +134,7 @@ input[type="radio"] {
   .box,
   .box2,
   .box2_grid3,
-  .box2_grid5 > div input {
+  .box2_grid6 > div input {
     font-size: 14px; 
   }
 }
@@ -142,7 +142,7 @@ input[type="radio"] {
   .box,
   .box2,
   .box2_grid3,
-  .box2_grid5 > div input {
+  .box2_grid6 > div input {
     font-size: 12px; 
   }
 }

@@ -4,6 +4,7 @@
   grid-auto-rows: minmax(70px, auto);
   background: #76A595;
   border:#272727 2px solid;
+  
 }
 .box .box2_grid3 > div input{
   display: flex;
@@ -61,10 +62,10 @@ display: none !important;
   display: inline-block;
 }
 
-/*input[type="radio"] {
-  width: 45px; 
-  height: 45px; 
-}*/
+input[type="radio"] {
+  width: 25px; 
+  height: 25px; 
+}
 
 .top_b_grid{
   display: grid;
@@ -72,6 +73,12 @@ display: none !important;
 }
 
 
+.small{
+  
+  font-size: 10px;
+  font-weight: 700;
+  
+}
 
 
 .box2{
@@ -93,9 +100,9 @@ display: none !important;
 }
 
 
-.box2_grid5{
+.box2_grid6{
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .box2_grid3{
@@ -117,6 +124,10 @@ display: none !important;
   text-align: center;
   font-weight: 700;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+.flexf{
+  
+  text-align: left;
 }
 
 @media screen and (max-width: 768px) {

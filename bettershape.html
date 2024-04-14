@@ -13,7 +13,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-auto-rows: minmax(auto);
-        background: #76a595;
+        background: #76a595; 
         border: #272727 2px solid;
       }
       .top_box_grid> div:nth-child(odd){
@@ -340,7 +340,10 @@ input[type="radio"] {
                 <label class="label" for="M.RESIST:">M.RESIST:</label>
                 <input class="input_text" type="number" id="MRESIST" placeholder="................." maxlength="10" required>
             </div>
-            <div></div>
+            <div>
+              <button class="file-input-label" onclick="cycleColors()">Cycle Colors</button>
+              
+            </div>
             <div class="flex">
                 <label class="label" for="MANA REG:">MANA REG:</label>
                 <input class="input_text" type="number" id="MANAReg" placeholder="................." maxlength="10" required>
@@ -417,6 +420,102 @@ input[type="radio"] {
         </div>
     </div>
     <script>
+      var colors1 = ['#85bdaa', '#00ff00'];
+var currentIndex1 = 0;
+
+var colors2 = ['#76a595', '#00ff00'];
+var currentIndex2 = 0;
+
+var colors3 = ['#ff007b', '#00ff00'];
+var currentIndex3 = 0;
+
+var colors4 = ['#bfb0c2', '#00ff00'];
+var currentIndex4 = 0;
+
+var colors5 = ['#cccba7', '#00ff00'];
+var currentIndex5 = 0;
+
+var colors6 = ['#85bdaa', '#00ff00'];
+var currentIndex6 = 0;
+
+var colors7 = ['#76a595', '#00ff00'];
+var currentIndex7 = 0;
+
+var colors8 = ['#76a595', '#00ff00'];
+var currentIndex8 = 0;
+
+var colors9 = ['#85bdaa', '#00ff00'];
+var currentIndex9 = 0;
+
+function cycleColors() {
+  currentIndex1 = (currentIndex1 + 1) % colors1.length;
+  var color1 = colors1[currentIndex1];
+  var elements1 = document.querySelectorAll('.top_box_grid');
+  elements1.forEach(function(element) {
+    element.style.backgroundColor = color1;
+  });
+  
+  currentIndex2 = (currentIndex2 + 1) % colors2.length;
+  var color2 = colors2[currentIndex2];
+  var elements2 = document.querySelectorAll('.top_box_grid> div:nth-child(odd)'); 
+  elements2.forEach(function(element) {
+    element.style.backgroundColor = color2;
+  });
+  
+  currentIndex3 = (currentIndex3 + 1) % colors3.length;
+  var color3 = colors3[currentIndex3];
+  var elements3 = document.querySelectorAll('.file-input-label');
+  elements3.forEach(function(element) {
+    element.style.backgroundColor = color3; 
+  });
+
+  currentIndex4 = (currentIndex4 + 1) % colors4.length;
+  var color4 = colors4[currentIndex4];
+  var elements4 = document.querySelectorAll('.middle_box_grid');
+  elements4.forEach(function(element) {
+    element.style.backgroundColor = color4; 
+  });
+
+  currentIndex5 = (currentIndex5 + 1) % colors5.length;
+  var color5 = colors5[currentIndex5];
+  var elements5 = document.querySelectorAll('.backgroundb');
+  elements5.forEach(function(element) {
+    element.style.backgroundColor = color5;
+  });
+
+  currentIndex6 = (currentIndex6 + 1) % colors6.length;
+  var color6 = colors6[currentIndex6];
+  var elements6 = document.querySelectorAll('.bottom_box_grid');
+  elements6.forEach(function(element) {
+    element.style.backgroundColor = color6; 
+  });
+
+  currentIndex7 = (currentIndex7 + 1) % colors7.length;
+  var color7 = colors7[currentIndex7];
+  var elements7 = document.querySelectorAll('.bottom_box_grid> div:nth-child(odd)');
+  elements7.forEach(function(element) {
+    element.style.backgroundColor = color7; 
+  });
+
+  currentIndex8 = (currentIndex8 + 1) % colors8.length;
+  var color8 = colors8[currentIndex8];
+  var elements8 = document.querySelectorAll('.bottomest_box_grid');
+  elements8.forEach(function(element) {
+    element.style.backgroundColor = color8; 
+  });
+
+  currentIndex9 = (currentIndex9 + 1) % colors9.length;
+  var color9 = colors9[currentIndex9];
+  var elements9 = document.querySelectorAll('.bottomest_box_grid> div:nth-child(odd)');
+  elements9.forEach(function(element) {
+    element.style.backgroundColor = color9; 
+  });
+}
+
+
+
+
+
         function get_Fields() {
       return {
         Name: document.getElementById("Name"),

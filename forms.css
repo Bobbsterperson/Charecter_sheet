@@ -1,154 +1,91 @@
-.box{
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-auto-rows: minmax(70px, auto);
-  background: #76A595;
-  border:#272727 2px solid;
-  
-}
-.box .box2_grid3 > div input{
-  display: flex;
-}
-.label1 {
-  font-size: 40px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-}
-.label {
-  font-size: 30px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
-}
-.input_text[type="text"]{
-  height: 50px;
-  width: 230px;
-  font-size: 30px;
-} 
-.input_text{
-  min-height: 50px;
-  min-width: 230px;
-  font-size: 30px;
-} 
-.input_number[type="number"]{
-  height: 50px;
-  width: 230px;
-  font-size: 30px;
-} 
-.input_number_s[type="number"]{
-  height: 50px;
-  width: 80px;
-  font-size: 30px;
-} 
-input[type="button"], button {
-  background-color: #f5e877;
-  color: #cf2222;
-  padding: 1em;
-  border-radius: 4px;
-  cursor: pointer;
-  display: inline-block;
-}
-.hide_button {
-display: none !important; 
-}
-
-.pretty{
-  background-color: #f5e877;
-}
-
-.file-input-label {
-  background-color: #ff007b;
-  color: #fff;
-  padding: 1em;
-  border-radius: 4px;
-  cursor: pointer;
-  display: inline-block;
-}
-
-input[type="radio"] {
-  width: 25px; 
-  height: 25px; 
-}
-
-.top_b_grid{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-
-.small{
-  
-  font-size: 10px;
-  
-  
-}
-
-
-.box2{
-  display: grid;
-  grid-template-columns: 1fr 1fr ;
-  grid-auto-rows: minmax(70px, auto);
-}
-.box2 > div{
-  background: #5FFAC5;
-  padding:1em;
-  border:#272727 2px solid;
-}
-.box2 > div:nth-child(odd){
-  background: #bfb0c2;
-}
-
-.max{
-  width: 20%;
-}
-
-
-.box2_grid6{
-  display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
-}
-
-.box2_grid3{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-.box2 .label2{
-  font-size: 30px;
-}
-.border{
-  border-top:#272727 2px solid;
-  border-bottom: #272727 2px solid;
-  text-shadow: 0 0 5px rgb(83, 128, 252);
-}
-.flex{
-  text-align: end;
-}
-.flexs{
-  text-align: center;
-  font-weight: 700;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-}
-.flexf{
-  
-  text-align: left;
-}
-
 @media screen and (max-width: 768px) {
-  .box,
-  .box2,
-  .box2_grid3,
-  .box2_grid6 > div input {
-    font-size: 14px; 
+  p, label{
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    margin: 0;
   }
 }
 @media screen and (max-width: 480px) {
-  .box,
-  .box2,
-  .box2_grid3,
-  .box2_grid6 > div input {
-    font-size: 12px; 
+  p, label{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
   }
 }
 
+/* this pattern doesn't work */
+.col-5{
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  display: grid;
+}
 
+.col-4{
+  grid-template-columns: 25% 25% 25% 25%;
+  display: grid;
+}
 
+.col-3{
+  grid-template-columns: 33% 33% 33%;
+  display: grid;
+}
 
+.col-2{
+  grid-template-columns: 50% 50%;
+  display: grid;
+}
 
+.col-1{
+  grid-template-columns: 100%;
+  display: grid;
+}
 
+.colored-light{
+  background: #A2CACB;
+}
+
+.colored-dark{
+  background: #82B8BA;
+}
+
+.al-center{
+  justify-items: center;
+}
+
+body{
+  height: 100vh;
+  margin:0;
+}
+
+p, label{
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+input[type='text'], input[type='number'], select{
+  width: 100px;
+  height: 20px;
+  border-radius: 5px;
+}
+
+.white-border-top-bottom{
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+}
+
+.white-border-right{
+  border-right: 3px solid white;
+}
+
+.clickable-label{
+  cursor: pointer;
+  padding: 7px 5px;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: #2E368F;
+  color: white;
+  display: inline-block;
+}
+
+.hidden{
+  display: none;
+}
